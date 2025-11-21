@@ -6,9 +6,9 @@ dotenv.config({ path: './server/.env' });
 const checkConnection = async () => {
   try {
     console.log('🔍 Checking MongoDB connection...');
-    console.log(`📍 URI: ${process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio'}`);
+    console.log(`📍 URI: ${process.env.MONGODB_URI || 'mongodb://localhost:27017/apex'}`);
     
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio');
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/apex');
     
     console.log('✅ MongoDB connection successful!');
     console.log(`📊 Database: ${mongoose.connection.db.databaseName}`);

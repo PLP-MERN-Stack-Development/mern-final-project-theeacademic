@@ -5,8 +5,8 @@ import dotenv from 'dotenv';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
-// Load environment variables
-dotenv.config();
+// Load environment variables from server/.env
+dotenv.config({ path: './server/.env' });
 
 // Initialize Express app
 const app = express();
@@ -22,7 +22,7 @@ app.use(morgan('dev')); // Logging
 // MongoDB Connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mern-app', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/apex', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
