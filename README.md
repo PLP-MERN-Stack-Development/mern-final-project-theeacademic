@@ -19,7 +19,7 @@ ApexView Capital solves these challenges by providing an intuitive, secure, and 
 
 ## 🚀 Live Demo
 
-**Deployed Application**: https://mern-final-project-theeacademic.vercel.app/
+**Deployed Application**: [https://mern-final-project-theeacademic.vercel.app/](https://mern-final-project-git-8e6fa5-kellykabui392-gmailcoms-projects.vercel.app/)
 
 **Demo Video**: [Add your 5-10 minute video demonstration link here]
 
