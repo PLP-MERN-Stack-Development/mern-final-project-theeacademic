@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 340 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 10% 15%;
+
+    --primary: 330 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 330 20% 96%;
+    --secondary-foreground: 340 10% 15%;
+
+    --muted: 330 15% 96%;
+    --muted-foreground: 340 10% 50%;
+
+    --accent: 330 90% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 145 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --green: 142 76% 45%;
+    --green-foreground: 0 0% 100%;
+
+    --loss: 0 75% 55%;
+    --loss-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 20% 90%;
+    --input: 330 20% 90%;
+    --ring: 330 85% 55%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 330 85% 55%;
+    --chart-2: 145 65% 45%;
+    --chart-3: 280 65% 60%;
+    --chart-4: 200 100% 50%;
+    --chart-5: 30 90% 55%;
+
+    --blue: 210 100% 50%;
+    --blue-foreground: 0 0% 100%;
+
+    --purple: 280 65% 60%;
+    --purple-foreground: 0 0% 100%;
+
+    --orange: 30 90% 55%;
+    --orange-foreground: 0 0% 100%;
+
+    --yellow: 45 93% 55%;
+    --yellow-foreground: 340 10% 15%;
+
+    --teal: 180 75% 45%;
+    --teal-foreground: 0 0% 100%;
+
+    --indigo: 240 75% 60%;
+    --indigo-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 340 20% 8%;
+    --foreground: 330 10% 95%;
+
+    --card: 340 18% 12%;
+    --card-foreground: 330 10% 95%;
+
+    --popover: 340 18% 12%;
+    --popover-foreground: 330 10% 95%;
+
+    --primary: 330 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 15% 18%;
+    --secondary-foreground: 330 10% 95%;
+
+    --muted: 340 15% 18%;
+    --muted-foreground: 330 10% 70%;
+
+    --accent: 330 90% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 145 65% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --green: 142 76% 50%;
+    --green-foreground: 0 0% 100%;
+
+    --loss: 0 75% 60%;
+    --loss-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 15% 22%;
+    --input: 340 15% 22%;
+    --ring: 330 85% 60%;
+
+    --chart-1: 330 85% 60%;
+    --chart-2: 145 65% 50%;
+    --chart-3: 280 65% 60%;
+    --chart-4: 200 100% 55%;
+    --chart-5: 0 75% 60%;
+
+    --blue: 210 100% 55%;
+    --blue-foreground: 0 0% 100%;
+
+    --purple: 280 65% 65%;
+    --purple-foreground: 0 0% 100%;
+
+    --orange: 30 90% 60%;
+    --orange-foreground: 0 0% 100%;
+
+    --yellow: 45 93% 60%;
+    --yellow-foreground: 340 20% 8%;
+
+    --teal: 180 75% 50%;
+    --teal-foreground: 0 0% 100%;
+
+    --indigo: 240 75% 65%;
+    --indigo-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
